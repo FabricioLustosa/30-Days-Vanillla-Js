@@ -13,12 +13,30 @@ body {
     url(./images/shutterstock_294263531_Easy-Resize.com.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* background-position: center center; */
+  overflow: hidden;
+}
+.align {
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  text-align: center;
+  color: white;
+}
+header h1 {
+  margin-bottom: 30px;
+  font-size: 48px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.637);
 }
 main {
-  background-color: aqua;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -55,7 +73,7 @@ kbd {
   box-shadow: 0 0 10px rgb(250, 217, 0);
 }
 .sound {
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
   color: rgb(250, 217, 0);
 }
