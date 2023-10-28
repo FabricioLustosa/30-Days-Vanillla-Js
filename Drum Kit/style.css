@@ -13,11 +13,14 @@ body {
     url(./images/shutterstock_294263531_Easy-Resize.com.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* background-position: center center; */
+}
+main {
+  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background-position: center center; */
 }
 .keys {
   display: flex;
@@ -43,10 +46,13 @@ kbd {
   background-color: rgba(0, 0, 0, 0.353);
   text-shadow: 0 0 5px black;
   cursor: pointer;
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
-.key:hover {
-  transform: scale(1.08);
+.playing {
+  /*adcicionado com js*/
+  transform: scale(1.1);
+  border-color: rgb(250, 217, 0);
+  box-shadow: 0 0 10px rgb(250, 217, 0);
 }
 .sound {
   font-size: 10px;
